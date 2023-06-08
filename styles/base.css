@@ -22,4 +22,17 @@ font-family: 'Noto Sans', sans-serif;
 /* Set a bigger default font size*/
 html {
     font-size: 110%;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav {
+    font-family: 'Inter', sans-serif;
+}
+
+#groot-img {
+    width: 240px;
 }
