@@ -13,6 +13,12 @@ font-family: 'Noto Sans', sans-serif;
     --white: #ffffff;
 }
 
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Set a bigger default font size*/
 html {
     font-size: 110%;
