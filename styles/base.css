@@ -1,0 +1,19 @@
+/* Default CSS for mobile viewport */
+
+/*
+Fonts:
+font-family: 'Fira Mono', monospace;
+font-family: 'Inter', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+*/
+
+:root {
+    --yellow: #fff503;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+/* Set a bigger default font size*/
+html {
+    font-size: 110%;
+}
