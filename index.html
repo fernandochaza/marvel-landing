@@ -15,22 +15,29 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Inter&family=Noto+Sans:wght@900&display=swap"
       rel="stylesheet"
     />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="styles/base.css" />
   </head>
   <body>
     <header>
-      <section class="header-nav">
-        <h1>I am Groot</h1>
-        <h2>Menu</h2>
+      <div class="header-nav">
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+          <i class="fa fa-bars"></i
+        ></a>
         <nav>
-          <ul>
-            <li>About Groot</li>
-            <li>History</li>
-            <li>Powers &amp; Abilities</li>
-            <li>Groot's Wiki</li>
+          <ul class="top-nav" id="my-top-nav">
+            <li><h1 class="main-title">I am Groot</h1></li>
+            <li><a href="#home" class="active">About Groot</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#powers">Powers &amp; Abilities</a></li>
+            <li><a href="#wiki">Groot's Wiki</a></li>
           </ul>
         </nav>
-      </section>
+      </div>
       <div class="header-image">
         <img
           id="groot-img"
@@ -147,5 +154,6 @@
         </ul>
       </div>
     </footer>
+    <script src="scripts/responsiveMenu.js"></script>
   </body>
 </html>

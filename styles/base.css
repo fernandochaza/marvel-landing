@@ -8,31 +8,77 @@ font-family: 'Noto Sans', sans-serif;
 */
 
 :root {
-    --yellow: #fff503;
-    --black: #000000;
-    --white: #ffffff;
+  --yellow: #fff503;
+  --black: #000000;
+  --white: #ffffff;
 }
 
 /* Reset default spacing */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Set a bigger default font size*/
+/* Main default styles */
 html {
-    font-size: 110%;
-    font-family: 'Inter', sans-serif;
+  display: flex;
+  font-size: 110%; /* Set a bigger default font size*/
+  font-family: "Inter", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
 }
 
-h1, h2 {
-    font-family: 'Noto Sans', sans-serif;
+h1 {
+  font-size: 2rem;
+}
+
+h1,
+h2 {
+  font-family: "Noto Sans", sans-serif;
 }
 
 nav {
-    font-family: 'Inter', sans-serif;
+  font-family: "Fira Mono", monospace;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+li {
+  list-style: none;
+}
+/* END OF Main default styles */
+
+/* Navigation and header */
+.header-nav {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  background-color: var(--white);
+  padding: 1rem 1rem;
+}
+
+.header-nav nav {
+  grid-row: 1;
+  text-align: center;
+}
+
+.icon {
+  grid-column: 2;
+  /* align-self: end; I'm no sure of this alignment*/
+  color: var(--black);
+  font-size: 2rem;
+}
+
+.top-nav {
+  color: var(--black);
+}
+
+.top-nav li:not(:first-child) {
+  display: none;
 }
 
 #groot-img {
-    width: 240px;
+  width: 240px;
 }
