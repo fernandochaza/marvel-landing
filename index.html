@@ -24,20 +24,21 @@
   </head>
   <body>
     <header>
-      <div class="header-nav">
-        <a class="icon" href="javascript:void(0);" onclick="myFunction()">
-          <i class="fa fa-bars"></i
-        ></a>
         <nav>
-          <ul class="top-nav" id="my-top-nav">
-            <li><h1 class="main-title">I am Groot</h1></li>
-            <li><a href="#home" class="active">About Groot</a></li>
-            <li><a href="#history">History</a></li>
-            <li><a href="#powers">Powers &amp; Abilities</a></li>
-            <li><a href="#wiki">Groot's Wiki</a></li>
+          <ul class="top-nav clicked" id="my-top-nav">
+            <li class="nav-title">
+              <h1 class="main-title">I am Groot</h1>
+              <a class="menu-button" href="javascript:void(0);" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i
+              ></a>
+            </li>
+            <li class="arrow">|</li>
+            <li class="menu-item"><a href="#home" class="active">About Groot</a></li>
+            <li class="menu-item"><a href="#history">History</a></li>
+            <li class="menu-item"><a href="#powers">Powers &amp; Abilities</a></li>
+            <li class="menu-item"><a href="#wiki">Groot's Wiki</a></li>
           </ul>
         </nav>
-      </div>
       <div class="header-image">
         <img
           id="groot-img"
