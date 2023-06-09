@@ -3,10 +3,10 @@ function toggleMenu() {
     let menu = document.getElementById("my-top-nav");
     if (menu.className === "top-nav") {
       menu.className += " clicked";
-      document.querySelector(".main-title").textContent = "Menu";
+      document.querySelector(".menu-title").textContent = "Menu";
     } else {
       menu.className = "top-nav";
-      document.querySelector(".main-title").textContent = "I am Groot";
+      document.querySelector(".menu-title").textContent = "";
 
     }
 

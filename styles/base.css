@@ -51,8 +51,12 @@ li {
 }
 /* END OF Main default styles */
 
-
 /* Navigation and header */
+.main-title {
+  text-align: center;
+  margin: .5rem auto;
+}
+
 .top-nav .nav-title {
   display: grid;
   background-color: var(--white);
@@ -60,7 +64,7 @@ li {
   border-radius: 8px;
 }
 
-.main-title {
+.menu-title {
   text-align: center;
   padding-left: 2.4rem;
 }
@@ -69,8 +73,7 @@ li {
   grid-column: 1/3;
   color: var(--white);
   text-align: center;
-  margin: 0;
-  padding: 0;
+  margin: -4px 0;
   font-weight: 600;
 }
 
@@ -106,11 +109,10 @@ li {
 .header-image {
   display: flex;
   justify-content: center;
-  margin: 3rem auto
+  margin: 3rem auto;
 }
 
 #groot-img {
   width: 240px;
 }
 /* END OF Navigation and header */
-
