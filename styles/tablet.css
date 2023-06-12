@@ -1,4 +1,61 @@
 /* CSS for tablet viewport */
 @media screen and (min-width: 768px) {
-    
+  html {
+    font-size: 110%; /* Set a medium default font size*/
+  }
+
+  /* HEADER AND NAV */
+  header {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: var(--color-background);
+  }
+
+  .header-top {
+    border: none;
+  }
+
+  .menu-button,
+  .arrow,
+  .nav-title {
+    display: none;
+  }
+
+  .top-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 0.5rem;
+  }
+
+  .menu-item a {
+    padding: 0;
+    margin: 0;
+  }
+
+  .top-nav .menu-item {
+    padding: 0.5rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 400px;
+  }
+
+  #groot-img {
+    object-fit: cover; /* Resize the image to cover the container while maintaining aspect ratio */
+    object-position: top;
+  }
+
+  .hero-text {
+    font-size: 4vw;
+    text-align: center;
+  }
+  /* ENF OF HEADER AND NAV */
 }
