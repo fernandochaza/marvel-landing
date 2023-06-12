@@ -9,11 +9,4 @@ function toggleMenu() {
       document.querySelector(".menu-title").textContent = "";
 
     }
-
-    let header = document.getElementById("my-header");
-    if (header.className === "header-nav") {
-      header.className += " clicked";
-    } else {
-      header.className = "header-nav";
-    }
   }

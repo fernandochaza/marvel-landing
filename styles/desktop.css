@@ -1,5 +1,70 @@
 /* CSS for desktop viewport */
 
 @media screen and (min-width: 1024px) {
-    
+  html {
+    font-size: 140%; /* Set default font size*/
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 2rem 260px auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+
+  .header-top {
+    grid-column: 2/3;
+    display: flex;
+  }
+
+  header nav {
+    grid-column: 3/4;
+    display: flex;
+    justify-self: flex-end;
+  }
+
+  .top-nav {
+    margin-right: 2rem;
+    justify-content: flex-end;
+  }
+
+  .top-nav.clicked {
+    display: flex;
+  }
+
+  #logo {
+    width: 60px;
+    padding: 0.2rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+
+  .top-nav .menu-item:hover {
+    transition: all 300ms ease-in;
+    transform: scale(1.1);
+    transform-origin: center;
+    border: 1px solid black;
+  }
+
+  .hero {
+    margin: 4rem 8rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 600px;
+  }
+
+  #groot-img {
+    object-position: center;
+  }
+
+  main {
+    margin: auto 4rem;
+  }
+
+  body {
+    padding-top: 90px;
+  }
 }
