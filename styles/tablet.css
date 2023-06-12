@@ -63,4 +63,8 @@
   .article-text {
     line-height: 1.5rem;
   }
+
+  .article-text-box {
+    grid-column: 2/7;
+  }
 }
