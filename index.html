@@ -46,13 +46,24 @@
           </li>
           <li class="arrow">|</li>
           <li class="menu-item">
-            <a href="#home" class="active">About Groot</a>
+            <a href="#about" class="active" onclick="toggleMenu()"
+              >About Groot</a
+            >
           </li>
-          <li class="menu-item"><a href="#history">History</a></li>
           <li class="menu-item">
-            <a href="#powers">Powers &amp; Abilities</a>
+            <a href="#history" onclick="toggleMenu()">History</a>
           </li>
-          <li class="menu-item"><a href="#wiki">Groot's Wiki</a></li>
+          <li class="menu-item">
+            <a href="#powers" onclick="toggleMenu()">Powers &amp; Abilities</a>
+          </li>
+          <li class="menu-item">
+            <a
+              href="https://marvelcinematicuniverse.fandom.com/wiki/Groot"
+              target="_blank"
+              onclick="toggleMenu()"
+              >Groot Fan's Wiki</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -64,11 +75,11 @@
           alt=""
         />
       </div>
-      <section class="about">
-        <h2>About Groot</h2>
-        <div class="vertical-line"></div>
-        <div class="text-area">
-          <p class="text">
+      <section class="article about" id="about">
+        <h2 class="article-title">About Groot</h2>
+        <div class="article-line">|</div>
+        <div class="article-text-box">
+          <p class="article-text">
             Groot is a Flora colossus from Planet X, the capital of the branch
             worlds. The Flora colossi are tree-like beings whose language is
             almost impossible to understand due to the stiffness of their
@@ -77,19 +88,20 @@
             angry with the Flora colossi for their apparent inability to speak,
             though Groot was shown to have been actually speaking not just
             understandably but eloquently in his language throughout
-            Annihilation: Conquest. The Flora colossi are ruled over by the
-            "Arbor Masters" and teach the children of the species with "Photonic
-            Knowledge", which is the collected knowledge of the Arbor Masters of
-            the generations and is absorbed through photosynthesis; this is a
-            highly advanced education method, making the Flora colossi geniuses.
+            Annihilation: Conquest. <br /><br />
+            The Flora colossi are ruled over by the "Arbor Masters" and teach
+            the children of the species with "Photonic Knowledge", which is the
+            collected knowledge of the Arbor Masters of the generations and is
+            absorbed through photosynthesis; this is a highly advanced education
+            method, making the Flora colossi geniuses.
           </p>
         </div>
       </section>
-      <section class="history">
-        <h2>History</h2>
-        <div class="vertical-line"></div>
-        <div class="text-area">
-          <p class="text">
+      <section class="article history" id="history">
+        <h2 class="article-title">History</h2>
+        <div class="article-line">|</div>
+        <div class="article-text-box">
+          <p class="article-text">
             Groot is the accomplice of Rocket Raccoon. Together, the pair had
             traveled the galaxy picking up bounties until they met Star-Lord and
             Gamora just before the four of them were captured and put into the
@@ -98,28 +110,39 @@
             However, when it was discovered that the Orb contained one of the
             Infinity Stones which was being sought out by Ronan the Accuser,
             Groot convinced his friends to risk everything to stop Ronan's
-            diabolical plans. During the Battle of Xandar, Groot sacrificed his
-            own life to save his new friends. However, part of his destroyed
-            body was planted by Rocket to birth a new Groot, as they joined the
-            Guardians of the Galaxy. As the new Groot began to grow, he stayed
-            with the Guardians and endeavored with them on many adventures. They
-            were soon hired by the Sovereign to destroy an Abilisk, but they
-            were then targeted by their former employers due to Rocket who
-            double-crossed them. During the escape, they had met Peter Quill's
-            father Ego while Groot and Rocket, along with Yondu Udonta, were
-            captured by Taserface's faction of the Ravagers, but Groot was able
-            to help them all escape. Groot then joined his allies and assisted
-            them in destroying Ego and saving all his friends, but Udonta died.
-            Over the next four years, Groot continued to grow and started
-            exhibiting the personality of an adolescent.
+            diabolical plans.
+          </p>
+
+          <p class="article-text">
+            During the Battle of Xandar, Groot sacrificed his own life to save
+            his new friends. However, part of his destroyed body was planted by
+            Rocket to birth a new Groot, as they joined the Guardians of the
+            Galaxy.
+          </p>
+
+          <p class="article-text">
+            As the new Groot began to grow, he stayed with the Guardians and
+            endeavored with them on many adventures. They were soon hired by the
+            Sovereign to destroy an Abilisk, but they were then targeted by
+            their former employers due to Rocket who double-crossed them.
+          </p>
+
+          <p class="article-text">
+            During the escape, they had met Peter Quill's father Ego while Groot
+            and Rocket, along with Yondu Udonta, were captured by Taserface's
+            faction of the Ravagers, but Groot was able to help them all escape.
+            Groot then joined his allies and assisted them in destroying Ego and
+            saving all his friends, but Udonta died. Over the next four years,
+            Groot continued to grow and started exhibiting the personality of an
+            adolescent.
           </p>
         </div>
       </section>
-      <section class="powers">
-        <h2>Powers &amp; Abilities</h2>
-        <div class="vertical-line"></div>
-        <div class="text-area">
-          <p class="text">
+      <section class="article powers" id="powers">
+        <h2 class="article-title">Powers &amp; Abilities</h2>
+        <div class="article-line">|</div>
+        <div class="article-text-box">
+          <p class="article-text">
             Flora colossus Physiology: Groot is a Flora colossus, an ancient
             race of tree-like humanoid beings, with superhuman abilities. As a
             tree-like being, he could manipulate his body to grow limbs. They
@@ -129,7 +152,7 @@
             Flora colossus, although as an offspring it will not retain the
             memories or personality of the original.
           </p>
-          <p class="text">
+          <p class="article-text">
             Superhuman Strength: Groot meets Steve Rogers Groot lifts three
             Outriders Groot is capable of great feats of strength, from breaking
             sturdy metal items to fighting other strong opponents and lifting
@@ -140,7 +163,7 @@
             them effortlessly. He could even pull a branch off of a tree while
             still in his baby pot.
           </p>
-          <p class="text">
+          <p class="article-text">
             Superhuman Durability: The skin of Groot is composed entirely of a
             dense and durable wood, thus allowing him to easily sustain large
             amounts of damage from firearms, melee weapons and explosions. He

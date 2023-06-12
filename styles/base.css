@@ -9,10 +9,11 @@ font-family: 'Squada One', cursive;
 */
 
 :root {
-  --yellow: #fff503;
-  --black: #000000;
-  --header-bg: #d15e00;
-  --white: #ffffff;
+  --dark-text: #000000;
+  --light-text: white;
+  --color-background: #d15e00;
+  --light-background: #ffffff;
+  --dark-background: black;
 }
 
 /* Reset default spacing */
@@ -23,13 +24,17 @@ font-family: 'Squada One', cursive;
 
 /* Main default styles */
 html {
-  font-size: 110%; /* Set a bigger default font size*/
+  font-size: 120%; /* Set a bigger default font size*/
   font-family: "Inter", sans-serif;
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--light-background);
+  color: var(--dark-text);
 }
 
 h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
   font-size: 2rem;
 }
 
@@ -45,7 +50,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--dark-text);
 }
 
 li {
@@ -57,25 +62,27 @@ li {
 .header-top {
   display: grid;
   grid-template-columns: 60px auto 60px;
-  background-color: var(--header-bg);
+  background-color: var(--color-background);
   border-radius: 8px;;
 }
 
 .main-title {
   grid-column: 2/3;
   align-self: center;
-  text-shadow: 2px 2px 2px white;
+  text-shadow: 1px 1px 2px white;
 }
 
 #logo {
   width: 40px;
+  background-color: var(--light-background);
+  border-radius: 8px;
   margin: auto;
 }
 
 .menu-button {
-  background-color: #ffffff;
-  color: var(--black);
-  border: 1px solid var(--black);
+  background-color: var(--light-background);
+  color: black;
+  border: 1px solid black;
   border-radius: 8px;
   box-shadow: 4px 4px black;
   font-size: 1.5rem;
@@ -88,7 +95,7 @@ nav {
 }
 
 .menu-title {
-  border: 1px solid var(--black);
+  border: 1px solid black;
   border-radius: 8px;
   padding: .5rem 0;
   margin-top: 4px;
@@ -107,10 +114,24 @@ nav {
 .top-nav .menu-item {
   grid-column: 1/3;
   padding: 1rem 1rem;
-  background-color: var(--white);
+  background-color: var(--light-background);
   border-radius: 8px;
-  border: 1px solid var(--black);
+  border: 1px solid black;
   text-align: center;
+}
+
+.main-image {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+#groot-img {
+  background-color: var(--color-background);
+  width: 200px;
+  border: 4px solid black;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px gray;
 }
 
 /* Hide the navigation Menu*/
@@ -122,18 +143,43 @@ nav {
 .top-nav.clicked{
   display: block;
 }
-
-.main-image {
-  display: flex;
-  justify-content: center;
-  margin: 2rem auto;
-}
-
-#groot-img {
-  background-color: var(--header-bg);
-  width: 200px;
-  border: 4px solid black;
-  border-radius: 50%;
-  box-shadow: 4px 4px 4px black;
-}
 /* END OF Navigation and header */
+
+
+/* Articles Section */
+.article {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+}
+
+.article-title {
+  grid-column: 1/4;
+  background-color: var(--color-background);
+  border: 4px solid black;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  text-shadow: 1px 1px 2px white;
+}
+
+.article-line {
+  grid-column: 2/3;
+  text-align: center;
+  margin: -1px 0;
+}
+
+
+.article-text-box {
+  grid-column: 1/4;
+  border: 4px solid black;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+}
+
+.article-text {
+  padding: 1rem 1.5rem;
+}
+
+/* END of Articles Section */
