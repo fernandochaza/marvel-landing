@@ -11,7 +11,7 @@ font-family: 'Squada One', cursive;
 :root {
   --dark-text: #000000;
   --light-text: white;
-  --color-background: #d15e00;
+  --color-background: #da7706;
   --light-background: #ffffff;
   --dark-background: black;
 }
@@ -199,3 +199,29 @@ nav {
 }
 
 /* END of Articles Section */
+
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background);
+  border-radius: 8px;
+  padding: 1rem 0;
+}
+
+.footer-sign p{
+  text-align: center;
+}
+
+.social-links{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  padding: 0 1rem;
+}
