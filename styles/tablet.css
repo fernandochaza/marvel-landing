@@ -56,6 +56,11 @@
   .hero-text {
     font-size: 4vw;
     text-align: center;
+    
   }
   /* ENF OF HEADER AND NAV */
+
+  .article-text {
+    line-height: 1.5rem;
+  }
 }

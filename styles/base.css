@@ -26,8 +26,8 @@ font-family: 'Squada One', cursive;
 html {
   font-size: 120%; /* Set a bigger default font size*/
   font-family: "Inter", sans-serif;
-  background-color: var(--dark-background);
-  color: var(--light-text);
+  background: rgb(16,19,19);
+  background: linear-gradient(90deg, rgba(16,19,19,1) 0%, rgba(38,38,38,1) 50%, rgba(16,19,19,1) 100%);  color: var(--light-text);
 }
 
 h1 {
@@ -200,6 +200,7 @@ nav {
 
 .article-text {
   padding: 1rem 1.5rem;
+  line-height: 1.2rem;
 }
 
 /* END of Articles Section */
