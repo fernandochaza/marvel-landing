@@ -110,19 +110,32 @@ const httpResponse = {
 const characters = httpResponse.data;
 
 // Render the characters cards at runtime
-// renderCharacters(characters);
+renderCharacters(characters);
 
 
+// Select the order by button and add an event listener
+const orderButton = document.querySelector(".order-by-button");
+orderButton.addEventListener("click", () => {
+
+  // Get the choosen order
+  const selectedOrder = document.getElementById("order-by").value;
+
+  // Clean the cards section
+  cleanHtml(".characters-cards");
+
+  // Order the characters cards by the selected order
+  orderItems(characters, selectedOrder);
+
+  // Re-render the characters
+  renderCharacters(characters);
+});
+
+
+/**
+ * Remove the inner content of an element given its class name
+ * @param {*} className A string representing the class name of the element (e.g. ".card-section")
+ */
 function cleanHtml(className) {
   const element = document.querySelector(className);
   element.innerHTML = "";
 }
-
-const orderButton = document.querySelector(".order-by-button");
-orderButton.addEventListener("click", () => {
-  const selectedOrder = document.getElementById("order-by").value;
-
-  cleanHtml("characters-cards")
-  orderItems(characters, selectedOrder);
-  renderCharacters(characters);
-});

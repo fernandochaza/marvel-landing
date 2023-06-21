@@ -7,6 +7,7 @@ export function renderCharacters(charactersObject) {
   // Get the HTML section to render the characters
   const charactersSection = document.querySelector(".characters-cards");
 
+  // Create an HTML card for each character
   for (const character of charactersObject) {
     const name = character.name;
     const description = character.description;
@@ -20,8 +21,11 @@ export function renderCharacters(charactersObject) {
     <p>Release Date: ${releaseDate}</p>
     <br>
     <img src=${image} alt="Marvel Heroes">
+    <hr>
     </div>
     `
+
+    // Append the card into the cards section
     charactersSection.innerHTML += characterHTML;
   };
 };
