@@ -66,6 +66,11 @@
               >Groot Fan's Wiki</a
             >
           </li>
+          <li class="menu-item">
+            <a href="#other-characters" target="_blank" onclick="toggleMenu()"
+              >Other Characters</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -82,7 +87,7 @@
           <h3 class="hero-text">- I am Groot</h3>
         </div>
       </div>
-      <section class="article about" id="about">
+      <article class="article about" id="about">
         <h2 class="article-title box-left">About Groot</h2>
         <div class="article-line box-left">|</div>
         <div class="article-text-box text-left">
@@ -103,11 +108,11 @@
             method, making the Flora colossi geniuses.
           </p>
         </div>
-        <div class="article-image image-right">
-          <img src="/images/baby-groot-rm-background-rounded.webp" alt="">
-        </div>
-      </section>
-      <section class="article history" id="history">
+        <aside class="article-image image-right">
+          <img src="images/baby-groot-rm-background-rounded.webp" alt="" />
+        </aside>
+      </article>
+      <article class="article history" id="history">
         <h2 class="article-title box-right">History</h2>
         <div class="article-line box-right">|</div>
         <div class="article-text-box text-right">
@@ -147,11 +152,11 @@
             adolescent.
           </p>
         </div>
-        <div class="article-image image-left">
-          <img src="/images/baby-groot-rm-background-3.webp" alt="">
-        </div>
-      </section>
-      <section class="article powers" id="powers">
+        <aside class="article-image image-left">
+          <img src="images/baby-groot-rm-background-3.webp" alt="" />
+        </aside>
+      </article>
+      <article class="article powers" id="powers">
         <h2 class="article-title box-middle">Powers &amp; Abilities</h2>
         <div class="article-line box-middle">|</div>
         <div class="article-text-box text-middle">
@@ -185,8 +190,31 @@
             Sakaarans' attacks. He also withstood many shots by the Grunds.
           </p>
         </div>
-        <div class="article-image image-right">
-          <img src="" alt="">
+      </article>
+      <section id="other-characters" class="article">
+        <h2 class="article-title box-middle">Other Marvel Characters</h2>
+        <div class="article-line box-middle">|</div>
+        <div class="article-text-box text-middle">
+          <div class="order-items">
+            <p>Order By:</p>
+            <select name="order-by" id="order-by">
+              <option value="name">Name</option>
+              <option value="release_date">Release Date</option>
+            </select>
+            <button class="order-by-button">Order</button>
+          </div>
+          <div class="character-card">
+            <h3>Iron Man</h3>
+            <p>
+              Scott Lang, a skilled thief, gains the ability to shrink in scale
+              but increase in strength when wearing the Ant-Man suit.
+            </p>
+            <br>
+            <p>Release Date: ${releaseDate}</p>
+            <br>
+            <img src="images/marvel-heroes.avif" alt="Marvel Heroes" />
+          </div>
+          <div class="characters-cards"></div>
         </div>
       </section>
     </main>
@@ -207,5 +235,6 @@
       </div>
     </footer>
     <script src="scripts/responsiveMenu.js"></script>
+    <script src="scripts/main.js" type="module"></script>
   </body>
 </html>

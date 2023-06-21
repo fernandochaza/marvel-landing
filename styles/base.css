@@ -239,3 +239,29 @@ footer {
   transition: all 200ms ease-in;
   transform: scale(1.2);
 }
+
+.order-items {
+  display: flex;
+  justify-content: center;
+  margin: .5rem 0;
+}
+
+.order-items select {
+  margin: 0 .3rem;
+}
+
+.character-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.character-card h3 {
+  line-height: 2rem;
+}
+
+.character-card img {
+  width: 280px;
+  border-radius: 8px;
+  align-self: center;
+}
